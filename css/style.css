@@ -1,5 +1,5 @@
 body {
-background-color: aqua;
+background-color: aliceblue;
 
 }
 
@@ -8,4 +8,91 @@ background-color: aqua;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+color: #777e90;
+text-decoration: none;
+
+}
+
+/* Estas propiedades hacen que las imagenes sean responsive y se adapten al tamaño de su contenedor */
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #777e90;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1200;
+    margin: 0; 
+    padding: 0 40px;
+}
+
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav > ul > li > a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Este selector solo se activa si el cursor pasa por encima de los elementos */
+
+nav > ul > li > a:hover {
+    color: blueviolet;
+}
+
+header {
+    padding: 80px 0;
+    display: flex;
+    gap: 200;
+}
+
+header > div:first-child {
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 24px;
+}
+
+.btn-group > a:first-child {
+    background-color: #6e06f2;
+    color: aliceblue;
+}
+
+.btn-group > a:last-child {
+    border: 1px black solid
 }
