@@ -141,11 +141,57 @@ header > div:last-child > img {
     margin: 80px 0;
     background-color: turquoise;
     height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cont-second > div {
     background-color: tomato;
     width: 120px;
     height: 120px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.cont-second > div > p {
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.flex-cont-wrap {
+    padding: 40px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+.flex-cont-wrap > div {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border: 1px #6e06f2 solid;
+}
+
+.flex-cont-wrap > div {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border: 1px #6e06f2 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-cont-wrap > div > p {
+    color: aliceblue;
+}
+
+.flex-cont-wrap > div:nth-child(5) {
+    background-color: yellowgreen;
 }
