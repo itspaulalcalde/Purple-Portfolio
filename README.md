@@ -28,4 +28,4 @@ Este conjunto de propiedades sigue la filosofía del diseño responsive y funcio
 
 Para activar estas propiedades lo primero que debemos hacer es estructurar el HTML, luego localizar el elemento contenedor o padre y añadirle la propiedad de CSS -> display: flex;
 
-En la mayoría de los casos vamos a maquetar el HTML con rpopiedades flexbox que no estamos 
+En la mayoría de los casos vamos a maquetar el HTML con propiedades flexbox que no estamos obligados. Dependiendo de la situación podemos maquetar el HTML usando otras propiedades.
