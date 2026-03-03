@@ -86,7 +86,26 @@ gap: 28px;
 header > div:last-child {
     min-width: 380px;
     max-width: 624px;
+    border: 1px #6e06f2 solid;
+    padding: 40px;
+    height: fit-content;
+    border-radius: 50%;
+    /*overflow: hidden; */
+
 }
+
+header > div:last-child > img {
+    border-radius: 50%;
+}
+
+/*GRUPO DE BOTONES*/
+
+.btn-group {
+    display: flex;
+    gap: 24px;
+}
+
+/*Este seleciona los botones*/
 
 .btn-group > a {
     padding: 8px 10px;
@@ -102,4 +121,31 @@ header > div:last-child {
 
 .btn-group > a:last-child {
     border: 1px black solid
+}
+
+/*FLEXBOX.HTML*/
+.cont-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cont-parent > div {
+    width: 275px;
+    padding: 20px;
+}
+
+.cont-second {
+    margin: 80px 0;
+    background-color: turquoise;
+    height: 720px;
+}
+
+.cont-second > div {
+    background-color: tomato;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
 }
