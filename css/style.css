@@ -194,4 +194,53 @@ header > div:last-child > img {
 
 .flex-cont-wrap > div:nth-child(5) {
     background-color: yellowgreen;
+    order: -1;
 }
+
+
+/* SECCIÓN PROYECTOS */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Esta selección afecta a las 2 filas */
+#projects > .p-row {
+    display: flex;
+    gap: 40px;
+}
+
+#projects > .p-row > .col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#projects > .p-row > .col > p {
+    font-size: 16px;
+}
+
+
+#projects > .p-row > .small-col {
+    width: 35%;
+}
+
+#projects > .p-row > .big-col {
+    width: 65%;
+}
+
+/*  Selector para el contenedor de la imágen */
+#projects > .p-row > .col > div {
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#projects > .p-row > .col > div > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECCION STORY */
