@@ -36,10 +36,20 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+p {
     font-size: 24px;
     color: #777e90;
     font-weight: 400;
+}
+
+h2 {
+    font-size: 54px;
+    color: black;
+    font-weight: bold;
+}
+
+h2 > span {
+    color: #6e06f2;
 }
 
 .wrapper {
