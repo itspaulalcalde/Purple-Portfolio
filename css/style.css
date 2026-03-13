@@ -84,7 +84,11 @@ nav > ul > li > a:hover {
 header {
     padding: 80px 0;
     display: flex;
-    gap: 200;
+    row-gap: 80px;
+    column-gap: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 header > div:first-child {
@@ -107,6 +111,12 @@ header > div:last-child {
 header > div:last-child > img {
     border-radius: 50%;
 }
+
+header > div {
+    flex: 2;
+}
+
+
 
 /*GRUPO DE BOTONES*/
 
@@ -235,10 +245,12 @@ header > div:last-child > img {
 
 #projects > .p-row > .small-col {
     width: 35%;
+    /*flex: 1; */
 }
 
 #projects > .p-row > .big-col {
     width: 65%;
+    /*flex: 2; */
 }
 
 /*  Selector para el contenedor de la imágen */
@@ -253,4 +265,29 @@ header > div:last-child > img {
     object-fit: cover;
 }
 
-/* SECCION STORY */
+/* MEDIA QUERIES */
+
+/*Este bloque de selectores solo funcionará cuando se cumpla la condición de que la pantalla del usuario
+sea menor de 720px. */
+@media screen and (max-width: 720px) {
+ 
+  h1 {
+    font-size: 48px;
+  }
+
+  #projects > .pro-row {
+     flex-wrap: wrap;
+  }
+    
+  #projects > .pro-row > .col {
+        width: 100%;
+  }
+} 
+
+/*MOBILE*/
+@media screen and (max-width: 480px) {
+    
+    .wrapper {
+        padding: 0 20px;
+    }
+}

@@ -30,3 +30,24 @@ Para activar estas propiedades lo primero que debemos hacer es estructurar el HT
 
 En la mayoría de los casos vamos a maquetar el HTML con propiedades flexbox que no estamos obligados. Dependiendo de la situación podemos maquetar el HTML usando otras propiedades.
 
+
+## MEDIA-QUERIES (QUERY)
+
+Mediante las media-queries de CSS podemos detectar el tamaño em pixeles del dispositivo que esta usando el usuario para ver nuestra web.
+
+Con estas media-query podemos detectar si la pantalla del usuario es de tipo desktop, tablet o mobile.
+
+Nueva sintaxis de media query
+@media screen and (width <= 720px) {
+ 
+    body {
+        background-color: aqua;
+    }
+    
+} 
+
+En el código las media-queries se encontrarán 
+siemore al final del archivo CSS.
+
+Podemos definir tantos intervalos como queramos 
+pero con dos debería ser más que suficiente.
