@@ -37,7 +37,7 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    /* font-size: 24px; */
     color: #777e90;
     font-weight: 400;
 }
@@ -265,10 +265,43 @@ header > div {
     object-fit: cover;
 }
 
+/* FOOTER */
+footer {
+    margin: 80px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer > .f-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer > .f-row > .social-icons {
+    font-size: 24px;
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+footer >.f-row > .btn-group {
+    align-items: flex-end;
+}
+
+footer >.f-row > .copyright {
+    text-align: right;
+}
+
+
+
 /* MEDIA QUERIES */
 
 /*Este bloque de selectores solo funcionará cuando se cumpla la condición de que la pantalla del usuario
 sea menor de 720px. */
+
+/*TABLET*/
 @media screen and (max-width: 720px) {
  
   h1 {
