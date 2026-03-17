@@ -296,7 +296,7 @@ footer >.f-row > .copyright {
 
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES (Responsive) */ 
 
 /*Este bloque de selectores solo funcionará cuando se cumpla la condición de que la pantalla del usuario
 sea menor de 720px. */
@@ -314,6 +314,16 @@ sea menor de 720px. */
     
   #projects > .pro-row > .col {
         width: 100%;
+  }
+
+  footer > .f-row {
+         flex-direction: column;
+         align-items: center;
+  }
+
+  footer > .f-row > .copyright {
+    padding-top: 40px;
+    text-align: center;
   }
 } 
 
