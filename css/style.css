@@ -137,10 +137,22 @@ header > div {
 .btn-group > a:first-child {
     background-color: #6e06f2;
     color: aliceblue;
+    transition: 0.3;
 }
 
 .btn-group > a:last-child {
     border: 1px black solid
+}
+
+/*Efectos hover para los botones */
+
+.btn-group > a:first-child:hover {
+    background-color: #923fff;
+}
+
+.btn-group > a:last-child:hover {
+    background-color: black;
+    color: aliceblue;
 }
 
 /*FLEXBOX.HTML*/
@@ -304,33 +316,37 @@ sea menor de 720px. */
 /*TABLET*/
 @media screen and (max-width: 720px) {
  
-  h1 {
+  .wrapper {
+        padding: 0 20px;
+    }
+  
+    h1 {
     font-size: 48px;
-  }
+    }
 
   #projects > .pro-row {
      flex-wrap: wrap;
-  }
+    }
     
   #projects > .pro-row > .col {
         width: 100%;
-  }
+    }
 
   footer > .f-row {
          flex-direction: column;
-         align-items: center;
-  }
+       align-items: center;
+   }
 
   footer > .f-row > .copyright {
     padding-top: 40px;
     text-align: center;
-  }
+   }
 } 
 
 /*MOBILE*/
 @media screen and (max-width: 480px) {
     
     .wrapper {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 }
